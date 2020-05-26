@@ -2,6 +2,8 @@
 
 ![Angular CLI](https://img.shields.io/badge/Angular%20CLI-9.1.6-red)
 
+Angular Launchpad provides a starting point to create web applications with Angular.
+
 ## Development server
 
 ```shell
