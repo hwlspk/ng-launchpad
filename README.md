@@ -1,10 +1,16 @@
-# NgLaunchpad
+# Angular Launchpad
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+![Angular CLI](https://img.shields.io/badge/Angular%20CLI-9.1.6-red)
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```shell
+# By default, an app is served at http://localhost:4200/
+ng serve
+ng serve -o 
+```
+
+The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -12,15 +18,37 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+#### Development Build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```shell
+ng build
+```
 
-## Running end-to-end tests
+#### Production Build
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```shell
+ng build --prod
+```
+
+## Running tests
+
+#### Execute Unit tests
+
+Via [Karma](https://karma-runner.github.io)
+
+```shell
+ng test
+```
+
+#### Execute end-to-end tests
+
+Via [Protractor](http://www.protractortest.org/)
+
+```shell
+ng e2e
+```
 
 ## Further help
 
