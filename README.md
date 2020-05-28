@@ -4,25 +4,28 @@
 
 Angular Launchpad provides a starting point to create web applications with Angular.
 
-## Development server
+## Development
+
+Launch an app for local development. By default, available at `http://localhost:4200/` in your browser.<br/>
+The app will automatically reload after a change to the source files.
 
 ```shell
-# By default, an app is served at http://localhost:4200/
-ng serve
-ng serve -o 
+ng serve -o
 ```
-
-The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component.<br/>
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Deployment Build
 
-The build artifacts will be stored in the `dist/` directory.
+Compiles an Angular app for deployment.<br/>
+The build files are generated in the `dist/` directory of the project workspace.
 
 #### Development Build
+
+Compilation with development settings.
 
 ```shell
 ng build
@@ -30,23 +33,25 @@ ng build
 
 #### Production Build
 
+Compilation with production settings.
+
 ```shell
 ng build --prod
 ```
 
-## Running tests
+## Testing
 
-#### Execute Unit tests
+#### Unit tests
 
-Via [Karma](https://karma-runner.github.io)
+Run unit tests via [Karma](https://karma-runner.github.io).
 
 ```shell
 ng test
 ```
 
-#### Execute end-to-end tests
+#### End-to-end tests
 
-Via [Protractor](http://www.protractortest.org/)
+Run end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ```shell
 ng e2e
