@@ -61,6 +61,7 @@
         ]
       }
     ],
+    "no-any": false,
     "no-console": [
       true,
       "debug",
@@ -100,6 +101,10 @@
         "named": "never"
       }
     },
+    "typedef": [
+      true,
+      "call-signature"
+    ],
     "typedef-whitespace": {
       "options": [
         {
