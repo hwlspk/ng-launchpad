@@ -35,12 +35,37 @@ import { Component } from '@angular/core';
   template: `
     <h1>{{ title }}</h1>
 
+    <nav>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      &nbsp;
+      <a routerLink="/shop" routerLinkActive="active">Shop</a>
+      &nbsp;
+      <a routerLink="/blog" routerLinkActive="active">Blog</a>
+      &nbsp;
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </nav>
+
     <router-outlet></router-outlet>
   `,
   styles: [`
-  
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: gray;
+    }
+    a:active {
+      text-decoration: underline;
+    }
+    `,
+    `
+    a.active {
+      color: black;
+      text-decoration: underline;
+    }
   `]
 })
 export class AppComponent {
-  title = 'ng-launchpad';
+  title = 'Launchpad';
 }
