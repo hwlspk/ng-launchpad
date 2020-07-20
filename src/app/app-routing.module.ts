@@ -11,6 +11,11 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogPageComponent, pathMatch: 'prefix' },
   { path: 'about', component: AboutPageComponent, pathMatch: 'prefix' },
 
+  {
+    path: 'shop',
+    loadChildren: () => import('./shop-area/shop-area.module').then(m => m.ShopAreaModule)
+  },
+
   { path: '404', component: NotFoundPageComponent, pathMatch: 'prefix' },
 
   { path: 'home', redirectTo: '/', pathMatch: 'prefix' },
