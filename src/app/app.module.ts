@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AdminAreaModule } from './admin-area/admin-area.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -19,6 +21,7 @@ import { NotFoundPageComponent } from './pages/not-found-page.component';
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
     BrowserAnimationsModule,
+    AdminAreaModule,
     AppRoutingModule
   ],
   declarations: [
@@ -29,6 +32,7 @@ import { NotFoundPageComponent } from './pages/not-found-page.component';
     NotFoundPageComponent
   ],
   providers: [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

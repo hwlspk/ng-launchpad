@@ -42,6 +42,8 @@ import { Component } from '@angular/core';
       &nbsp;
       <a routerLink="/blog" routerLinkActive="active">Blog</a>
       &nbsp;
+      <a routerLink="/admin" routerLinkActive="active">Admin</a>
+      &nbsp;
       <a routerLink="/about" routerLinkActive="active">About</a>
     </nav>
 
