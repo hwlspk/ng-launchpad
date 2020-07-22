@@ -152,6 +152,10 @@
               "devServerTarget": "ng-launchpad:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

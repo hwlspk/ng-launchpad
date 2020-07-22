@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "ng-launchpad",
+      "public": "dist/ng-launchpad",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}

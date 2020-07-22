@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "launchpad-web": {
+      "hosting": {
+        "ng-launchpad": [
+          "launchpad-web"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "launchpad-web"
+  }
+}
