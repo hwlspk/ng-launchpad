@@ -1,6 +1,7 @@
 # Angular Launchpad
 
 ![Angular CLI](https://img.shields.io/badge/Angular%20CLI-10.0.3-red)
+[![Stackblitz](https://img.shields.io/badge/Stackblitz-⚡️-blue?)](https://stackblitz.com/edit/ng-launchpad)
 
 Angular Launchpad provides a starting point to create web applications with Angular.
 
