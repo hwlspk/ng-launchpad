@@ -5,15 +5,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AdminAreaModule } from './admin-area/admin-area.module';
+import { SharedModule } from './shared/shared.module';
+
+import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HomePageComponent } from './pages/home-page.component';
-import { BlogPageComponent } from './pages/blog-page.component';
-import { AboutPageComponent } from './pages/about-page.component';
-import { NotFoundPageComponent } from './pages/not-found-page.component';
+import { HomePageComponent } from './views/home-page.component';
+import { AboutPageComponent } from './views/about-page.component';
+import { ContactPageComponent } from './views/contact-page.component';
+import { BlogPageComponent } from './views/blog-page.component';
+import { NotFoundPageComponent } from './views/not-found-page.component';
 
 @NgModule({
   imports: [
@@ -21,7 +24,8 @@ import { NotFoundPageComponent } from './pages/not-found-page.component';
     HttpClientModule,
     FormsModule, ReactiveFormsModule,
     BrowserAnimationsModule,
-    AdminAreaModule,
+    SharedModule,
+    AdminModule,
     AppRoutingModule
   ],
   declarations: [
@@ -29,7 +33,8 @@ import { NotFoundPageComponent } from './pages/not-found-page.component';
     HomePageComponent,
     BlogPageComponent,
     AboutPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    ContactPageComponent
   ],
   providers: [],
   exports: [],

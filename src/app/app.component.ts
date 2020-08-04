@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { NavigationLink } from './shared/models/navigation-link';
+
 @Component({
   selector: 'app-root',
   /*
@@ -33,41 +35,40 @@ import { Component } from '@angular/core';
   styles: []
   */
   template: `
-    <h1>{{ title }}</h1>
+    <header>
+      <h1>{{ title }}</h1>
 
-    <nav>
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-      &nbsp;
-      <a routerLink="/shop" routerLinkActive="active">Shop</a>
-      &nbsp;
-      <a routerLink="/blog" routerLinkActive="active">Blog</a>
-      &nbsp;
-      <a routerLink="/admin" routerLinkActive="active">Admin</a>
-      &nbsp;
-      <a routerLink="/about" routerLinkActive="active">About</a>
-    </nav>
+      <lcd-navigation [links]="headerNavLinks"></lcd-navigation>
+    </header>
 
     <router-outlet></router-outlet>
+
+    <lcd-messaging></lcd-messaging>
   `,
   styles: [`
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    a:hover {
-      color: gray;
-    }
-    a:active {
-      text-decoration: underline;
-    }
-    `,
-    `
-    a.active {
-      color: black;
-      text-decoration: underline;
+    header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
   `]
 })
 export class AppComponent {
   title = 'Launchpad';
+  headerNavLinks: NavigationLink[];
+
+  constructor() {
+    this.headerNavLinks = [
+      { link: '/', text: 'Home', exact: true },
+      { link: '/about', text: 'About'},
+      { link: '/contact', text: 'Contact'},
+      { link: '/blog', text: 'Blog'},
+      { link: '/shop', text: 'Shop'},
+      { link: '/admin', text: 'Admin'},
+      { link: 'login', text: 'Login'},
+      { link: 'signup', text: 'Signup'},
+    ];
+  }
 }
